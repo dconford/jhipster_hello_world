@@ -1,8 +1,59 @@
-# jhipster_hello_world
+#jhipster_hello_world shell for SLMPData Project
+
+#About This Project
+
+This project attempts to take the static St. Louis City Police crime data and display it in a more interactive, responsive
+and useful form.
+
+Currently SLMPD (St.Louis Metropolitan Police Department) allows public access to its crime data through
+two methods: <br>
+
+1. Monthly PDF Report - This report provides totals for each
+   of several crime categories. It contains a summary page for the entire city
+   and for its individual neighborhoods. <br>
+   The PDF files can be accessed at this link: [https://www.slmpd.org/crime_stats.shtml](https://www.slmpd.org/crime_stats.shtml)
+
+2. Monthly CSV File - The individual records for each event that generate
+   the monthly record, exported from Excel in a CSV format. <br>
+   The CSV files can be accessed at this link: [https://www.slmpd.org/Crimereports.shtml](https://www.slmpd.org/Crimereports.shtml)
+
+There is no online database or realtime access to the data, only the static files noted above.
+As one might gather, the results are not very satisfying and require some user ability to simply view the reports.<br>
+
+For example, to view the city wide summary, one must navigate to the last page of the report.<br>
+
+This project hopes to improve that view by providing a simple interactive interface. <br>
+
+###Page Details
+The default view (landing page) would be a display of the city wide report.
+
+Additional views would require a sign on (for basic tracking and as a demonstration of authorization handling).<br>
+These views would include:
+
+<ul>
+    <li>View crime summary by neighborhood (79 official neighborhoods + parks).</li>
+    <li>View crime records by category on summary or neighborhood view</li>
+</ul>
+
+Future Additions would include:
+
+<ul>
+    <li>Graph for viewing crime rate change over time</li>
+    <li>Ability to select neighborhood and time frame for report</li>
+    <li>Color coding results to give a visual indication if crime is up</li>
+    <li>Administrative functions for adding new records to DB</li>
+    <li>Registered user notification when new monthly data is uploaded</li>
+</ul>
 
 This application was generated using JHipster 6.7.1, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v6.7.1](https://www.jhipster.tech/documentation-archive/v6.7.1).
+<br>
+Technology choices for this framework include a MySQL database, Spring Restful backend, and an Angular based Frontend.
 
-## Development
+# Jhipster Generated ReadMe Portion
+
+Notes below here, were generated automatically by jhipster.
+
+### Development
 
 Before you can build this project, you must install and configure the following dependencies on your machine:
 
